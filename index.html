@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Some testings.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Bootstrap tests</title>
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="Sergi Vos">
+    </head>
+    <body>
+
+    <nav class="navbar navbar-default centrar" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Code Basics</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-flask"></i> Courses</a></li>
+        <li><a href="#"><i class="fa fa-book"></i> Libraries</a></li>
+      </ul><!-- 
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search for something">
+          </div>
+        </div>
+      </form> -->
+      <ul class="nav navbar-nav navbar-right">
+        <ul id="signInDropdown" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-info navbar-btn dropdown-toggle"><i class="glyphicon glyphicon-user"></i> Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li style="width: 250px;">
+                                <form class="navbar-form form" role="form">
+                                    <div class="form-group">
+                                      <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                            <input id="emailInput" placeholder="email address" class="form-control" type="email" oninvalid="setCustomValidity('Please enter a valid email address!')" onchange="try{setCustomValidity('')}catch(e){}" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                                            <input id="passwordInput" placeholder="password" class="form-control" type="password" oninvalid="setCustomValidity('Please enter a password!')" onchange="try{setCustomValidity('')}catch(e){}" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary form-control">Login</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="pull-right"><a href="#" data-target="#pwdModal" data-toggle="modal">Forgot password?</a></span>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+    </div>
+            <div class="container">
+            <!-- Alerts
+                <div class="panel panel-success">
+                    <br>
+                    <div class="panel-body">
+                        <div class="alert alert-success fade in">
+                              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                              <strong>Welcome!</strong> We are launching our new website.
+                        </div>
+                    </div>
+                </div>
+                 -->
+              <div class="jumbotron">
+                <h1>Code Basics</h1>      
+                <p>Welcome to our website. Here you will find a lot of coding contenent.</p>
+                <h2>Web site progress? 5%</h2>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 5%;">
+                </div>
+                 </div>
+            </div>
+
+    <!-- Forgot Password Modal -->
+
+    <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">What's My Password?</h1>
+      </div>
+      <div class="modal-body">
+          <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                          
+                          <p>If you have forgotten your password you can reset it here.</p>
+                            <div class="panel-body">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" placeholder="E-mail Address" name="email" type="email">
+                                    </div>
+                                    <input class="btn btn-lg btn-primary btn-block" value="Send My Password" type="submit">
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          </div>    
+      </div>
+  </div>
+  </div>
+</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
